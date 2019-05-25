@@ -679,6 +679,7 @@ header nav.active-background {
     display: inline-block;
     text-align: left;
     margin-top: 25px;   
+    overflow: hidden;
 }
 
 .info .container ul.faculty-list li:nth-child(1),
@@ -704,7 +705,9 @@ header nav.active-background {
 }
 .info .container ul.faculty-list li img{
     width: 60px;
-    height: 80px;    
+    height: 80px; 
+    float: left;  
+    margin-right: 40px; 
 }
 .wrapper-main {
     padding-bottom: 50px;
