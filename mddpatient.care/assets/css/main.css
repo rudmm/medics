@@ -755,6 +755,62 @@ header nav.active-background {
     margin-right: 2%;
 }
 
+#payt2 {display: none;}
+
+[for="payt2"] {
+  position: relative;
+  display: block;
+  float: right;
+  right: 140px;
+  width: 120px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 10px;
+  line-height: 20px;
+  color: #ffffff;
+  border: 1px solid rgba(248, 148, 6, 1);
+  cursor: pointer;
+  text-align: center;
+
+}
+[for="payt2"]:before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+[for="payt2"]:after {
+  content: "2019";
+  position: absolute;
+  left: 0px; top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  background: #ffa500;
+  transition: .5s;
+}
+#payt2:checked ~ [for="payt2"]:after {
+  left: 65px;
+  content: "2018"
+}
+.y1, .y2{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.y1{
+    float: left;
+}
+.y2{
+    float: right;
+}
 .language-select:hover {
     background-color: #242424;
 }
@@ -777,7 +833,7 @@ header nav.active-background {
     position: absolute;
     right: 15px;
     float: right;
-    margin-top: 50px;
+    margin-top: 15px;
     /*Animate*/
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;
@@ -849,57 +905,7 @@ header nav.active-background {
     order: 1;
     pointer-events: none;
 }
-#payt2 {display: none;}
 
-[for="payt2"] {
-  position: relative;
-  display: block;
-  float: right;
-  width: 120px;
-  height: 40px;
-  padding: 0px;
-  border-radius: 10px;
-  line-height: 20px;
-  color: #ffffff;
-  border: 1px solid rgba(248, 148, 6, 1);
-  cursor: pointer;
-  text-align: center;
-
-}
-[for="payt2"]:before {
-  content: "";
-  position: absolute;
-  right: 15px;
-  vertical-align: middle;
-  color: #ffffff;
-}
-[for="payt2"]:after {
-  content: "2019";
-  position: absolute;
-  left: 0px; top: 0px;
-  display: block;
-  width: 50%;
-  height: 100%;
-  border-radius: 10px;
-  background: #ffa500;
-  transition: .5s;
-}
-#payt2:checked ~ [for="payt2"]:after {
-  left: 65px;
-  content: "2018"
-}
-.y1, .y2{
-    text-align: center;
-    width: 50%;
-    height: 100%;
-    vertical-align: middle;
-}
-.y1{
-    float: left;
-}
-.y2{
-    float: right;
-}
 
 
 @media screen and (max-width: 1078px) {}
