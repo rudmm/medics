@@ -855,6 +855,55 @@ header nav.active-background {
     order: 1;
     pointer-events: none;
 }
+#payt2 {display: none;}
+
+[for="payt2"] {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 10px;
+  line-height: 20px;
+  color: #ffffff;
+  border: 1px solid rgba(248, 148, 6, 1);
+  cursor: pointer;
+}
+[for="payt2"]:before {
+  content: "2019";
+  position: absolute;
+  right: 15px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+[for="payt2"]:after {
+  content: "2018";
+  position: absolute;
+  left: 0px; top: 0px;
+  display: block;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  background: #ffa500;
+  transition: .5s;
+}
+#payt2:checked ~ [for="payt2"]:after {
+  left: 65px;
+}
+.y1{
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+.y2{
+    text-align: center;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
 
 @media screen and (max-width: 1078px) {}
 
