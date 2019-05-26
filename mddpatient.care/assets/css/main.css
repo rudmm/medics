@@ -894,7 +894,7 @@ header nav.active-background {
     background: #191919;
 }
 
-.language-select li img {
+.language-select li a img {
     margin-right: 10px;
     width: 20px;
     height: 20px;
@@ -1109,10 +1109,14 @@ header nav.active-background {
     
     .mobile li a img{
         float: left;
+        border-radius: 100%;
     }
      .mobile li a span{
         overflow: hidden;
         text-align: left;
+        height: 100%;
+    display: flex;
+    align-items: center;
     }
     .mobile-nav ul li:last-child {
         border-bottom: none;
@@ -1202,6 +1206,9 @@ header nav.active-background {
     }
     .language-select.mobile li:last-child {
       min-height: auto;
+    }
+    .language-select.mobile li{
+        height: 30px;
     }
 }
 
