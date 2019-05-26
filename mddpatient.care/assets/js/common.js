@@ -41,5 +41,4 @@ let procent = ((fl*100)/widthAll)+'%';
 document.querySelector('[for="payt1"]').style.left = procent; 
 
 
-
   
