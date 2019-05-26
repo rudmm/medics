@@ -710,6 +710,12 @@ header nav.active-background {
     margin-right: 40px; 
     border-radius: 300%;
 }
+.info .container .faculty-list li .faculty-div{
+    float: left;
+}
+.info .container .faculty-list li .faculty-text{
+    overflow: hidden;
+}
 .wrapper-main {
     padding-bottom: 50px;
 }
