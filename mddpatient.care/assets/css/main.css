@@ -949,9 +949,65 @@ header nav.active-background {
         left: 0;
         width: 100%;
     }
+
     .mobile-nav a img {
         width: 35px;
     }
+    #payt1 {display: none;}
+
+[for="payt1"] {
+    position: absolute;
+  width: 120px;   
+  height: 40px;
+  left: 50%;
+  border-radius: 10px;
+  line-height: 20px;
+  color: #ffffff;
+  border: 1px solid rgba(248, 148, 6, 1);
+  cursor: pointer;
+  text-align: center;
+
+}
+[for="payt1"]:before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+[for="payt1"]:after {
+  content: "2019";
+  position: absolute;
+  left: 0px; top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -1px;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  background: #ffa500;
+  transition: .5s;
+}
+#payt1:checked ~ [for="payt1"]:after {
+  left: 60px;
+  content: "2018"
+}
+.y1m, .y2m{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.y1m{
+    float: left;
+}
+.y2m{
+    float: right;
+}
     .mobile-nav .nav-icon3 {
         width: 30px;
         height: 23px;
