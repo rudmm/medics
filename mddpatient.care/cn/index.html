@@ -75,6 +75,7 @@
                         </a>
                         </li>
                     </ul>
+                    <input type="checkbox" id="payt2" disabled /><label for="payt2"><a class="y1" href="#">2019</a><a href="#" class="y2" onclick="$('#payt2')[0].checked = true;">2018</a></label>
                     <ul class="language-select">
                       <li data-lang="en"><a href="http://mddpatient.care/index.html"><img src="images/uk.png"><span>English</span></a></li>
                       <li data-lang="esp"><a href="http://mddpatient.care/es/index.html"><img src="images/spn.png"><span>Spanish</span></a></li>
@@ -90,6 +91,7 @@
                     <a href="#">
                     <img src="images/logotype.png"  alt="">
                 </a>
+                <input type="checkbox" id="payt1" disabled /><label for="payt1"><a class="y1m" href="#">2019</a><a href="#" class="y2m" onclick="$('#payt1')[0].checked = true;">2018</a></label>
                     <div class="nav-icon3">
                         <span></span>
                         <span></span>
@@ -106,11 +108,11 @@
                     <!-- <li><a href="#f4">Educational Objectivities</a></li> -->
                     <li>
                         <ul class="language-select mobile">
-                          <li data-lang="en"><a href="http://mddpatient.care/index.html"><img src="images/uk.png"><span>English</span></a></li>
-                          <li data-lang="esp"><a href="http://mddpatient.care/es/index.html"><img src="images/spn.png"><span>Spanish</span></a></li>
-                          <li data-lang="fr"><a href="http://mddpatient.care/fr/index.html"><img src="images/fr.png"><span>French</span></a></li>
-                          <li data-lang="it"><a href="http://mddpatient.care/it/index.html"><img src="images/ita.png"><span>Italian</span></a></li>
-                          <li data-lang="por"><a href="http://mddpatient.care/ptbr/index.html"><img src="images/br.png"><span>Portuguese</span></a></li>
+                          <li data-lang="en" class="noactive"><a href="http://mddpatient.care/index.html"><img src="images/uk.png"><span>English</span></a></li>
+                          <li data-lang="esp" class="noactive"><a href="http://mddpatient.care/es/index.html"><img src="images/spn.png"><span>Spanish</span></a></li>
+                          <li data-lang="fr" class="noactive"><a href="http://mddpatient.care/fr/index.html"><img src="images/fr.png"><span>French</span></a></li>
+                          <li data-lang="it" class="noactive"><a href="http://mddpatient.care/it/index.html"><img src="images/ita.png"><span>Italian</span></a></li>
+                          <li data-lang="por" class="noactive"><a href="http://mddpatient.care/ptbr/index.html"><img src="images/br.png"><span>Portuguese</span></a></li>
                           <li class="active" data-lang="mdr"><a href="#"><img src="images/chi.png"><span>Chinese</span></a></li>
                         </ul>
                     </li>
@@ -133,7 +135,6 @@
         <div class="wrapper-main">
             <div class="patients cf">
                 <div class="container">
-                    <h2>点击候诊室里的一位患者。</h2>
                     <ul>
                         <li>
                             <a href="http://www.med-sims.org">
@@ -206,24 +207,44 @@
                 </div>
             </div>
             <div class="info">
+                <a href="#" id="f2"></a>
+                <div class="container">
+                    <img src="images/magnifying-glass.svg" alt="">
+                    <h2>概述</h2>
+                    <p>在这个交互式病例模拟系列中，您将遇到以MDD残留症状的诊断和管理为重点的符合现实的临床场景。</p>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#" id="f5"></a>
+                <div class="container">
+                    <img src="images/goal.svg" alt="">
+                    <h2>目标</h2>
+                    <p>向精神科医生、心理学家、初级保健医师和其他医疗保健专业人员介绍有关MDD患者残留症状的最新进展。</p>
+                </div>
+            </div>
+            <div class="info">
                 <a href="#" id="f3"></a>
                 <div class="container">
                     <img src="images/faculty.svg" alt="">
                     <h2>教学人员</h2>
                     <ul class="faculty-list">
                         <li>
+                            <img src="images/photo1.jpg">
                             <h3>Andrea Fagiolini</h3>
                             <p>医学博士，意大利锡耶纳大学医学院心理健康系精神病学教授</p>
                         </li>
                         <li>
+                            <img src="images/photo2.jpg">
                             <h3>Pratap R. Chokka</h3>
                             <p>医学博士，加拿大皇家内科医师学会会员，加拿大多伦多大学精神病学和药理学教授</p>
                         </li>
                         <li>
+                            <img src="images/photo1.jpg">
                             <h3>Roger S. McIntyre</h3>
                             <p>医学博士，加拿大皇家内科医师学会会员，Chokka综合健康中心创始人兼首席执行官，加拿大艾伯塔大学精神病学临床教授。</p>
                         </li>
                         <li>
+                            <img src="images/photo1.jpg">
                             <h3>Bernhard T. Baune</h3>
                             <p>哲学博士，医学博士，公共卫生硕士，澳大利亚与新西兰皇家精神科医师学会会员，澳大利亚阿德莱德大学阿德莱德医学院皇家阿德莱德医院精神病专业主任，精神病学教授兼主席</p>
                         </li>
