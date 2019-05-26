@@ -966,7 +966,7 @@ header nav.active-background {
 [for="payt1"]:after {
   content: "2019";
   position: absolute;
-  left: 60px; top: 0px;
+  left: -1px; top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -977,7 +977,7 @@ header nav.active-background {
   transition: .5s;
 }
 #payt1:checked ~ [for="payt1"]:after {
-  left: -1px;
+  left: 60px;
   content: "2018"
 }
 .y1m, .y2m{

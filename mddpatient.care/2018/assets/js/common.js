@@ -45,3 +45,9 @@ $('.y1').click(function(e) {
   setTimeout(function() { window.location.href = destination;$('#payt2')[0].checked = true; }, 1000);
   
 });
+$('.y1m').click(function(e) {
+  e.preventDefault();
+  var destination = $(this).attr('href');
+  setTimeout(function() { window.location.href = destination;$('#payt1')[0].checked = true; }, 1000);
+  
+});

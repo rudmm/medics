@@ -983,7 +983,7 @@ header nav.active-background {
 [for="payt1"]:after {
   content: "2019";
   position: absolute;
-  left: 0px; top: 0px;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
