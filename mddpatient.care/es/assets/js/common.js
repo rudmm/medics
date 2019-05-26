@@ -34,3 +34,12 @@ $(document).ready(function() {
                 $(".mobile-list").removeClass("active")
         }), o("a[href='#f1']", 0), o("a[href='#f2']", 72), o("a[href='#f3']", 72), o("a[href='#f4']", 72), o("a[href='#f5']", 72)
 });
+let widthSwitch = document.querySelector('[for="payt1"]').offsetWidth;
+let widthAll = document.documentElement.clientWidth;
+let fl = (((widthAll)-widthSwitch)/2);
+let procent = ((fl*100)/widthAll)+'%';
+document.querySelector('[for="payt1"]').style.left = procent; 
+
+
+
+  

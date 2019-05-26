@@ -75,6 +75,7 @@
                         </a>
                         </li>
                     </ul>
+                     <input type="checkbox" id="payt2" disabled /><label for="payt2"><a class="y1" href="#">2019</a><a href="#" class="y2" onclick="$('#payt2')[0].checked = true;">2018</a></label>
                     <ul class="language-select">
                       <li data-lang="en"><a href="http://mddpatient.care/index.html"><img src="images/uk.png"><span>English</span></a></li>
                       <li data-lang="esp"><a href="http://mddpatient.care/es/index.html"><img src="images/spn.png"><span>Spanish</span></a></li>
@@ -90,6 +91,7 @@
                     <a href="#">
                     <img src="images/logotype.png"  alt="">
                 </a>
+                <input type="checkbox" id="payt1" disabled /><label for="payt1"><a class="y1m" href="#">2019</a><a href="#" class="y2m" onclick="$('#payt1')[0].checked = true;">2018</a></label>
                     <div class="nav-icon3">
                         <span></span>
                         <span></span>
@@ -106,12 +108,12 @@
                     <!-- <li><a href="#f4">Educational Objectivities</a></li> -->
                     <li>
                         <ul class="language-select mobile">
-                          <li data-lang="en"><a href="http://mddpatient.care/index.html"><img src="images/uk.png"><span>English</span></a></li>
-                          <li data-lang="esp"><a href="http://mddpatient.care/es/index.html"><img src="images/spn.png"><span>Spanish</span></a></li>
+                          <li data-lang="en" class="noactive"><a href="http://mddpatient.care/index.html"><img src="images/uk.png"><span>English</span></a></li>
+                          <li data-lang="esp" class="noactive"><a href="http://mddpatient.care/es/index.html"><img src="images/spn.png"><span>Spanish</span></a></li>
                           <li class="active" data-lang="fr"><a href="#"><img src="images/fr.png"><span>French</span></a></li>
-                          <li data-lang="it"><a href="http://mddpatient.care/it/index.html"><img src="images/ita.png"><span>Italian</span></a></li>
-                          <li data-lang="por"><a href="http://mddpatient.care/ptbr/index.html"><img src="images/br.png"><span>Portuguese</span></a></li>
-                          <li data-lang="mdr"><a href="http://mddpatient.care/cn/index.html"><img src="images/chi.png"><span>Chinese</span></a></li>
+                          <li data-lang="it" class="noactive"><a href="http://mddpatient.care/it/index.html"><img src="images/ita.png"><span>Italian</span></a></li>
+                          <li data-lang="por" class="noactive"><a href="http://mddpatient.care/ptbr/index.html"><img src="images/br.png"><span>Portuguese</span></a></li>
+                          <li data-lang="mdr" class="noactive"><a href="http://mddpatient.care/cn/index.html"><img src="images/chi.png"><span>Chinese</span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -133,7 +135,6 @@
         <div class="wrapper-main">
             <div class="patients cf">
                 <div class="container">
-                    <h2>Cliquez sur un des patients dans la salle d’attente.</h2>
                     <ul>
                         <li>
                             <a href="http://www.med-sims.org">
@@ -206,24 +207,44 @@
                 </div>
             </div>
             <div class="info">
+                <a href="#" id="f2"></a>
+                <div class="container">
+                    <img src="images/magnifying-glass.svg" alt="">
+                    <h2>Aperçu</h2>
+                    <p>Dans cette série de simulation de cas interactifs, vous découvrirez des scénarios cliniques réalistes axés sur le diagnostic et la gestion des symptômes résiduels du TDM.</p>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#" id="f5"></a>
+                <div class="container">
+                    <img src="images/goal.svg" alt="">
+                    <h2>Objectif</h2>
+                    <p>Informer les psychiatres, les psychologues, les médecins généralistes et d'autres professionnels de la santé sur les progrès récents dans la gestion des symptômes résiduels chez les patients souffrant du TDM.</p>
+                </div>
+            </div>
+            <div class="info">
                 <a href="#" id="f3"></a>
                 <div class="container">
                     <img src="images/faculty.svg" alt="">
                     <h2>Faculté</h2>
                     <ul class="faculty-list">
                         <li>
+                            <img src="images/photo1.jpg">
                             <h3>Andrea Fagiolini</h3>
                             <p>M.D., Professeur de psychiatrie, Président, Département de Santé Mentale, Faculté de Médecine de l'Université de Sienne, Italie.</p>
                         </li>
                         <li>
+                            <img src="images/photo2.jpg">
                             <h3>Pratap R. Chokka</h3>
                             <p>M.D., FRCPC, Professeur de psychiatrie et de pharmacologie, Université de Toronto, Canada.</p>
                         </li>
                         <li>
+                            <img src="images/photo3.jpg">
                             <h3>Roger S. McIntyre</h3>
                             <p>M.D., FRCPC, Fondateur et PDG, Centre Chokka de santé intégrative, Professeur clinique, Psychiatrie, Université d’Alberta, Canada.</p>
                         </li>
                         <li>
+                            <img src="images/photo4.jpg">
                             <h3>Bernhard T. Baune</h3>
                             <p>PhD, M.D., MPH, FRANZCP, Professeur et Président du département de psychiatrie, Responsable, Discipline de Psychiatrie, Hôpital Royal Adelaide de la faculté de médecine de l'Université d'Adélaïde, Australie.</p>
                         </li>
