@@ -39,3 +39,9 @@ let widthAll = document.documentElement.clientWidth;
 let fl = (((widthAll)-widthSwitch)/2);
 let procent = ((fl*100)/widthAll)+'%';
 document.querySelector('[for="payt1"]').style.left = procent; 
+$('a').click(function(e) {
+  e.preventDefault();
+  var destination = $(this).attr('href');
+  setTimeout(function() { window.location.href = destination;$('#payt2')[0].checked = true; }, 1000);
+  
+});
