@@ -898,7 +898,7 @@ header nav.active-background {
 
 .language-select li span {
     vertical-align: middle;
-    display: inline-block;
+    float: left;
 }
 
 .language-select.open {
@@ -959,7 +959,6 @@ header nav.active-background {
     position: absolute;
   width: 120px;   
   height: 40px;
-  left: 50%;
   border-radius: 10px;
   line-height: 20px;
   color: #ffffff;
@@ -1089,13 +1088,25 @@ header nav.active-background {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
     .mobile-nav ul li a {
-        font-size: 16px;
+        font-size: 13px;
         color: #fff;
         text-decoration: none;
         font-family: 'CircularAir-Light';
         padding: 7px 0;
         display: block;
         text-align: center;
+        height: 100%;
+    }
+    .mobile .active a, .mobile .noactive a{
+        padding: 0;
+    }
+    
+    .mobile li a img{
+        float: left;
+    }
+     .mobile li a span{
+        overflow: hidden;
+        text-align: left;
     }
     .mobile-nav ul li:last-child {
         border-bottom: none;

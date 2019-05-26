@@ -36,9 +36,8 @@ $(document).ready(function() {
 });
 let widthSwitch = document.querySelector('[for="payt1"]').offsetWidth;
 let widthAll = document.documentElement.clientWidth;
-let fl = (((widthAll-30)-widthSwitch)/2);
+let fl = (((widthAll)-widthSwitch)/2);
 let procent = ((fl*100)/widthAll)+'%';
-alert(procent);
 document.querySelector('[for="payt1"]').style.left = procent; 
 
 
