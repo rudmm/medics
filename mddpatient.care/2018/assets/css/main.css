@@ -672,14 +672,15 @@ header nav.active-background {
 }
 
 .info .container ul.faculty-list {
-    text-align: left;
+    text-align: center;
 }
 
 .info .container ul.faculty-list li {
     display: inline-block;
+    width: 49.5%;
     text-align: left;
-    margin-top: 25px;   
-    overflow: hidden;
+    margin-top: 25px;
+    vertical-align: top;
 }
 
 .info .container ul.faculty-list li:nth-child(1),
@@ -688,12 +689,22 @@ header nav.active-background {
 }
 
 .info .container ul.faculty-list li h3 {
+    padding-left: 50px;
     position: relative;
     font-size: 24px;
     font-family: 'CircularAir-Black';
 }
 
-
+.info .container ul.faculty-list li h3:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 20px;
+    background: url(../../images/lines.svg) center center no-repeat;
+}
 
 .info .container ul.faculty-list li p {
     margin-top: 10px;
@@ -703,19 +714,7 @@ header nav.active-background {
     font-family: 'CircularAir-Book';
     font-size: 20px;
 }
-.info .container ul.faculty-list li img{
-    width: 60px;  
-    height: 60px;      
-    float: left;  
-    margin-right: 40px; 
-    border-radius: 100%;
-}
-.info .container .faculty-list li .faculty-div{
-    float: left;
-}
-.info .container .faculty-list li .faculty-text{
-    overflow: hidden;
-}
+
 .wrapper-main {
     padding-bottom: 50px;
 }
@@ -761,7 +760,6 @@ header nav.active-background {
 .info .container ul.educational-list li:nth-child(3) {
     margin-right: 2%;
 }
-
 #payt2 {display: none;}
 
 [for="payt2"] {
@@ -821,6 +819,7 @@ header nav.active-background {
 .y2{
     float: right;
 }
+
 .language-select:hover {
     background-color: #242424;
 }
@@ -904,7 +903,7 @@ header nav.active-background {
 
 .language-select li span {
     vertical-align: middle;
-    float: left;
+    display: inline-block;
 }
 
 .language-select.open {
@@ -916,13 +915,11 @@ header nav.active-background {
     pointer-events: none;
 }
 
-
-
 @media screen and (max-width: 1078px) {}
 
 @media screen and (max-width: 992px) {}
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     h2 {
         font-size: 26px;
     }
@@ -944,20 +941,6 @@ header nav.active-background {
     }
     nav {
         display: none;
-    }
-    .mobile-nav {
-        display: block;
-        background: #0a3c5d;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .mobile-nav a img {
-        width: 35px;
     }
     #payt1 {display: none;}
 
@@ -1013,6 +996,19 @@ header nav.active-background {
 .y2m{
     float: right;
 }
+    .mobile-nav {
+        display: block;
+        background: #0a3c5d;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .mobile-nav a img {
+        width: 35px;
+    }
     .mobile-nav .nav-icon3 {
         width: 30px;
         height: 23px;
@@ -1094,25 +1090,13 @@ header nav.active-background {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
     .mobile-nav ul li a {
-        font-size: 13px;
+        font-size: 16px;
         color: #fff;
         text-decoration: none;
         font-family: 'CircularAir-Light';
         padding: 7px 0;
         display: block;
         text-align: center;
-        height: 100%;
-    }
-    .mobile .active a, .mobile .noactive a{
-        padding: 0;
-    }
-    
-    .mobile li a img{
-        float: left;
-    }
-     .mobile li a span{
-        overflow: hidden;
-        text-align: left;
     }
     .mobile-nav ul li:last-child {
         border-bottom: none;
