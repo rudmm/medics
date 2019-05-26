@@ -40,9 +40,15 @@ let fl = (((widthAll)-widthSwitch)/2);
 let procent = ((fl*100)/widthAll)+'%';
 document.querySelector('[for="payt1"]').style.left = procent; 
 
-$('a').click(function(e) {
+$('.y2').click(function(e) {
   e.preventDefault();
   var destination = $(this).attr('href');
   setTimeout(function() { window.location.href = destination;$('#payt2')[0].checked = false; }, 1000);
+  
+});
+$('.y2m').click(function(e) {
+  e.preventDefault();
+  var destination = $(this).attr('href');
+  setTimeout(function() { window.location.href = destination;$('#payt1')[0].checked = false; }, 1000);
   
 });
